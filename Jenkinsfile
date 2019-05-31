@@ -1,6 +1,6 @@
 node {
    stage('Results') {
-       bat 'gradlew TestAutomationTask -PfeatureDir=Features -PreportDir=Reports'
+       bat './gradlew.bat TestAutomationTask -PfeatureDir=Features -PreportDir=Reports'
        junit 'Reports/*.xml'
    }
 }
