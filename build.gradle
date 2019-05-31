@@ -1,0 +1,11 @@
+buildscript {
+    repositories {
+    	mavenLocal()
+    	mavenCentral()
+    }
+    dependencies {
+        classpath group: 'com.kingfisher.taf', name: 'taf-gradle-plugin', version: '1.0'
+    }
+}
+
+apply plugin: 'com.kingfisher.taf'
